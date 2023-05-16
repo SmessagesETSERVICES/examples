@@ -24,6 +24,6 @@ def get_characters():
         'limit': 100
     }
     response = requests.get(f"{BASE_URL}characters", params=params)
-    return jsonify(response.json())
+    return response.json()
 
 app.run(debug=True)
