@@ -21,7 +21,7 @@ def get_characters():
         'apikey': PUBLIC_KEY,
         'ts': ts,
         'hash': hash,
-        'limit': 100
+        'limit': 21
     }
     response = requests.get(f"{BASE_URL}characters", params=params)
     return response.json()
