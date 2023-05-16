@@ -10,6 +10,6 @@ characters = m.characters
 
 my_char = characters.all(name="black bird")["data"]["results"]
 
-print(my_char[0]["series"])
+print(my_char)
 
 
