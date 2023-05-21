@@ -2,21 +2,20 @@
 
 {% extends "bootstrap/base.html" %}
 
-<!DOCTYPE html>
-<html>
-<body>
+{% block title %}
+{{ character.name }}
+{% endblock %}
 
-<h1>Members</h1>
-  
-<ul>
-    
-    <li>{{ seriesDetails.available }}</li>
-    <br>
-    <li>{{ seriesDetails.collectionURI }}</li>
-    <br>
-    <li>{{ seriesDetails.items }}</li>
-  
-</ul>
-
-</body>
-</html>
+{% block content %}
+<div class="">
+    <div class="">
+        <div class="">
+            <img src="{{ character.thumbnail.path }}.jpg" alt="{{ character.name }}" class="img-fluid">
+        </div>
+        <div class="">
+            <h1>{{ character.name }}</h1> 
+            <p>{{ character.description}}</p>
+        </div>
+    </div>
+</div>
+{% endblock%}

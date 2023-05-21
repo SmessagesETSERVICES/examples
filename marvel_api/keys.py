@@ -1,5 +1,3 @@
 PUBLIC_KEY="87d903572f5c69fb36c9360789419e4c"
 
 PRIVATE_KEY="58c662985242413648826c57afd86ea49d61c12e"
-
-BASE_URL="https://gateway.marvel.com:443/v1/public/"

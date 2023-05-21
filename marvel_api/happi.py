@@ -6,8 +6,10 @@ from keys import PRIVATE_KEY, PUBLIC_KEY
 m = Marvel(PUBLIC_KEY=PUBLIC_KEY, 
            PRIVATE_KEY=PRIVATE_KEY)
 
-event = m.events
+characters = m.characters
 
-my_events = event.all()["data"]['results']
-data = my_events[0]['series']
-print(data)
+my_char = characters.all(name="black bird")["data"]["results"]
+
+print(my_char)
+
+
